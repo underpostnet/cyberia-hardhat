@@ -1,0 +1,6 @@
+# Allowlist: scan the contract and its tooling only.
+/*
+!/contracts/
+!/ignition/
+!/scripts/
+!/hardhat.config.js
