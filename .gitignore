@@ -28,3 +28,6 @@ scripts/_cli_*_tmp.js
 .vscode_hardhat*
 
 hotspot*
+
+# Public key files `cyberia chain key-gen --save` writes.
+*.pub.json
