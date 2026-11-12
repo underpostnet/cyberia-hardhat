@@ -6,7 +6,8 @@ import { parseEther, getAddress } from 'viem';
 
 // The identity vectors are the cross-language contract: Node computes the canonical bytes, an
 // independent implementation hashed and encoded them, and Solidity must agree here.
-const vectors = JSON.parse(readFileSync(new URL('../../test/support/object-layer-identity-vectors.json', import.meta.url)));
+// `cyberia release build cyberia-hardhat` copies them from the engine.
+const vectors = JSON.parse(readFileSync(new URL('./support/object-layer-identity-vectors.json', import.meta.url)));
 const definition = (label) => vectors.definitions.find((v) => v.label === label);
 const HATCHET_A = definition('hatchet-a');
 const HATCHET_B = definition('hatchet-b');
